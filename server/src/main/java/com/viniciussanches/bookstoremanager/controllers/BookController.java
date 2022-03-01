@@ -25,7 +25,7 @@ public class BookController {
 	public MessageResponseDTO create(@RequestBody Book book) {
 		Book savedBook = bookRepository.save(book);
 		return MessageResponseDTO.builder()
-				.massage("Book Created with Id " + savedBook.getId())
+				.message("Book Created with Id " + savedBook.getId())
 				.build();
 	}
 }
